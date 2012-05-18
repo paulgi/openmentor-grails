@@ -30,7 +30,19 @@ class Tutor implements Comparable<Tutor>{
 	}
 
 	int compareTo(Tutor other) {
-		int familyCompared = familyName.compareTo(other.familyName)
-		return (familyCompared != 0) ? familyCompared : givenName.compareTo(other.givenName)
+		//int familyCompared = familyName.compareTo(other.familyName)
+		//return (familyCompared != 0) ? familyCompared : givenName.compareTo(other.givenName)
+		if(familyName != null && other.familyName!=null)
+		{
+			int familyCompared = familyName.compareTo(other.familyName)
+			
+			if(familyCompared != 0)
+				return familyCompared
+			else
+				if(givenName != null)
+					return givenName.compareTo(other.givenName)
+		}
+		else
+			return 0
 	}
 }

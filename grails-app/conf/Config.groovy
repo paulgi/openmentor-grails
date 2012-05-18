@@ -59,14 +59,14 @@ grails.config.locations = [
 ]
 
 //email server settings
-grails.mail.default.from="admin@openmentor.org"
+grails.mail.default.from="paul.gillary@kcl.ac.uk"
 //Change to your own email configuration
 grails {
 	mail {
-	  host = "smtp.gmail.com"
+	  host = "kclmail.kcl.ac.uk"
 	  port = 465
-	  username = "openmentoruk@gmail.com"
-	  password = "asdfqwer1234"
+	  username = ""
+	  password = ""
 	  props = ["mail.smtp.auth":"true",
 			   "mail.smtp.socketFactory.port":"465",
 			   "mail.smtp.socketFactory.class":"javax.net.ssl.SSLSocketFactory",
@@ -84,13 +84,13 @@ environments {
     production {
         //grails.serverURL = "http://lslvm-pz3.ecs.soton.ac.uk:8080/${appName}"
 		//grails.serverURL = "http://localhost:8080/${appName}"
-		grails.serverURL = "http://lslvm-ars2.ecs.soton.ac.uk:8080/${appName}"
+		grails.serverURL = "http://137.73.211.240/${appName}"
     }
     development {
-        grails.serverURL = "http://localhost:8080/${appName}"
+        grails.serverURL = "http://localhost/${appName}"
     }
     test {
-        grails.serverURL = "http://localhost:8080/${appName}"
+        grails.serverURL = "http://localhost/${appName}"
     }
 }
 

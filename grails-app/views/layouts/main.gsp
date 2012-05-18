@@ -101,19 +101,22 @@
                     	--%>
                     </ul>
                     
-                    <sec:ifAnyGranted roles="ROLE_OPENMENTOR-ADMIN">
+                    <sec:ifAnyGranted roles="ROLE_OPENMENTOR-ADMIN,ROLE_OPENMENTOR-USER">
                     
                     <hr/>
                     
                     <ul>
-                    	<li>
-                    		<g:link action="index" controller="course">
-                    		Courses
-                    	    </g:link>
-                    	</li>
+                    	
+                    	
                     	<li>
                     		<g:link action="index" controller="student">
                     		Students
+                    	    </g:link>
+                    	</li>
+                    	<sec:ifAnyGranted roles="ROLE_OPENMENTOR-ADMIN">
+                    	<li>
+                    		<g:link action="index" controller="course">
+                    		Courses
                     	    </g:link>
                     	</li>
                     	<li>
@@ -121,6 +124,7 @@
                     		Tutors
                     	    </g:link>
                     	</li>
+                    	</sec:ifAnyGranted>
 						<%--
                     	<li>
                     		<g:link action="index" controller="user">
