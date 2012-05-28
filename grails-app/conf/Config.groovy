@@ -59,14 +59,14 @@ grails.config.locations = [
 ]
 
 //email server settings
-grails.mail.default.from="paul.gillary@kcl.ac.uk"
+grails.mail.default.from="kclopenmentor@gmail.com"
 //Change to your own email configuration
 grails {
 	mail {
-	  host = "kclmail.kcl.ac.uk"
+	  host = "smtp.gmail.com"
 	  port = 465
-	  username = ""
-	  password = ""
+	  username = "kclopenmentor@gmail.com"
+	  password = "kcl0penment0r"
 	  props = ["mail.smtp.auth":"true",
 			   "mail.smtp.socketFactory.port":"465",
 			   "mail.smtp.socketFactory.class":"javax.net.ssl.SSLSocketFactory",
@@ -84,7 +84,7 @@ environments {
     production {
         //grails.serverURL = "http://lslvm-pz3.ecs.soton.ac.uk:8080/${appName}"
 		//grails.serverURL = "http://localhost:8080/${appName}"
-		grails.serverURL = "http://137.73.211.240/${appName}"
+		grails.serverURL = "http://openmentor.kc.ac.uk/${appName}"
     }
     development {
         grails.serverURL = "http://localhost/${appName}"
@@ -119,7 +119,7 @@ log4j = {
     warn   'org.mortbay.log'
 }
 
-//grails.plugins.springsecurity.rejectIfNoRule = true
+//grails.plugins.springsecurity.rejectIfNoRule = false
 
 grails.plugins.springsecurity.roleHierarchy = '''
 ROLE_OPENMENTOR-ADMIN > ROLE_OPENMENTOR-USER
