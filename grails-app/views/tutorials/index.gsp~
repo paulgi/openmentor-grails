@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>Welcome to Grails</title>
+        <meta name="layout" content="main" />
+        <style type="text/css" media="screen">
+        </style>
+    </head>
+    <body>
+        <div id="page">
+        	<div class="body">
+            <h1>Open Mentor Video Tutorials</h1>
+            
+            <p>
+           <strong>Create a tutor account</strong>
+      		</p>
+      		<p>
+      			<object width="720" height="576">
+      			<param name="movie" value="images/create_acc.flv">
+      			<embed src="images/create_acc.flv" width="720" height="576">
+      			</embed>
+      			</object>
+      		</p>
+      		
+       
+        </div>
+       
+    </body>
+</html>

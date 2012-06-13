@@ -22,7 +22,8 @@
         <div id="spinner" class="spinner" style="display:none;">
             <img src="${resource(dir:'images',file:'spinner.gif')}" alt="${message(code:'spinner.alt',default:'Loading...')}" />
         </div>
-        <div id="logo"><img src="${resource(dir:'images',file:'OMLogo.jpg')}" alt="OpenMentor" border="0" /></div>
+        <div id="logo"><img src="${resource(dir:'images',file:'OMLogo.jpg')}" alt="OpenMentor" border="0" />
+                       <img src="${resource(dir:'images',file:'OMtitle.jpg')}" alt="OpenMentor" border="0" /></div>
 		<div id="versionContainer">
 			<g:if env="test">Test</g:if>
 			<g:if env="development">Development</g:if>
@@ -90,6 +91,12 @@
                     		Background
                     		</g:link>
                     	</li>
+                    	    <li>
+                    		<g:link action="index" controller="tutorials">
+                    		Tutorials
+                    		</g:link>
+                    	</li>
+                    	
                     	<%-- 
                     	<sec:ifAnyGranted roles="ROLE_OPENMENTOR-USER">
                     	<li>

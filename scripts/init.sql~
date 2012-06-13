@@ -1,8 +1,8 @@
--- MySQL dump 10.13 Distrib 5.5.15, for Win64 (x86)
+-- MySQL dump 10.13  Distrib 5.5.15, for Win64 (x86)
 --
--- Host: localhost Database: openmentor
+-- Host: localhost    Database: openmentor
 -- ------------------------------------------------------
--- Server version 5.5.15
+-- Server version	5.5.15
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -20,7 +20,7 @@
 --
 
 DROP TABLE IF EXISTS `assignment`;
-/*!40101 SET @saved_cs_client = @@character_set_client */;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `assignment` (
   `id` bigint(20) NOT NULL AUTO_INCREMENT,
@@ -48,7 +48,7 @@ UNLOCK TABLES;
 --
 
 DROP TABLE IF EXISTS `category`;
-/*!40101 SET @saved_cs_client = @@character_set_client */;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `category` (
   `category` varchar(8) NOT NULL,
@@ -74,7 +74,7 @@ UNLOCK TABLES;
 --
 
 DROP TABLE IF EXISTS `comment`;
-/*!40101 SET @saved_cs_client = @@character_set_client */;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `comment` (
   `id` bigint(20) NOT NULL AUTO_INCREMENT,
@@ -101,7 +101,7 @@ UNLOCK TABLES;
 --
 
 DROP TABLE IF EXISTS `comment_category`;
-/*!40101 SET @saved_cs_client = @@character_set_client */;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `comment_category` (
   `comment_categories_id` bigint(20) DEFAULT NULL,
@@ -127,7 +127,7 @@ UNLOCK TABLES;
 --
 
 DROP TABLE IF EXISTS `course`;
-/*!40101 SET @saved_cs_client = @@character_set_client */;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `course` (
   `course_id` varchar(255) NOT NULL,
@@ -153,7 +153,7 @@ UNLOCK TABLES;
 --
 
 DROP TABLE IF EXISTS `course_students`;
-/*!40101 SET @saved_cs_client = @@character_set_client */;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `course_students` (
   `student_id` varchar(255) NOT NULL,
@@ -181,7 +181,7 @@ UNLOCK TABLES;
 --
 
 DROP TABLE IF EXISTS `course_tutors`;
-/*!40101 SET @saved_cs_client = @@character_set_client */;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `course_tutors` (
   `tutor_id` varchar(255) NOT NULL,
@@ -209,7 +209,7 @@ UNLOCK TABLES;
 --
 
 DROP TABLE IF EXISTS `grade`;
-/*!40101 SET @saved_cs_client = @@character_set_client */;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `grade` (
   `grade` varchar(2) NOT NULL,
@@ -233,7 +233,7 @@ UNLOCK TABLES;
 --
 
 DROP TABLE IF EXISTS `registration_code`;
-/*!40101 SET @saved_cs_client = @@character_set_client */;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `registration_code` (
   `id` bigint(20) NOT NULL AUTO_INCREMENT,
@@ -258,7 +258,7 @@ UNLOCK TABLES;
 --
 
 DROP TABLE IF EXISTS `role`;
-/*!40101 SET @saved_cs_client = @@character_set_client */;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `role` (
   `id` bigint(20) NOT NULL AUTO_INCREMENT,
@@ -284,7 +284,7 @@ UNLOCK TABLES;
 --
 
 DROP TABLE IF EXISTS `student`;
-/*!40101 SET @saved_cs_client = @@character_set_client */;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `student` (
   `student_id` varchar(255) NOT NULL,
@@ -311,7 +311,7 @@ UNLOCK TABLES;
 --
 
 DROP TABLE IF EXISTS `submission`;
-/*!40101 SET @saved_cs_client = @@character_set_client */;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `submission` (
   `id` bigint(20) NOT NULL AUTO_INCREMENT,
@@ -344,7 +344,7 @@ UNLOCK TABLES;
 --
 
 DROP TABLE IF EXISTS `submission_student_ids`;
-/*!40101 SET @saved_cs_client = @@character_set_client */;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `submission_student_ids` (
   `submission_id` bigint(20) DEFAULT NULL,
@@ -368,7 +368,7 @@ UNLOCK TABLES;
 --
 
 DROP TABLE IF EXISTS `submission_tutor_ids`;
-/*!40101 SET @saved_cs_client = @@character_set_client */;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `submission_tutor_ids` (
   `submission_id` bigint(20) DEFAULT NULL,
@@ -392,7 +392,7 @@ UNLOCK TABLES;
 --
 
 DROP TABLE IF EXISTS `tutor`;
-/*!40101 SET @saved_cs_client = @@character_set_client */;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `tutor` (
   `tutor_id` varchar(255) NOT NULL,
@@ -419,7 +419,7 @@ UNLOCK TABLES;
 --
 
 DROP TABLE IF EXISTS `user`;
-/*!40101 SET @saved_cs_client = @@character_set_client */;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `user` (
   `id` bigint(20) NOT NULL AUTO_INCREMENT,
@@ -450,7 +450,7 @@ UNLOCK TABLES;
 --
 
 DROP TABLE IF EXISTS `user_role`;
-/*!40101 SET @saved_cs_client = @@character_set_client */;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `user_role` (
   `role_id` bigint(20) NOT NULL,
@@ -478,7 +478,7 @@ UNLOCK TABLES;
 --
 
 DROP TABLE IF EXISTS `weight`;
-/*!40101 SET @saved_cs_client = @@character_set_client */;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `weight` (
   `id` bigint(20) NOT NULL AUTO_INCREMENT,
