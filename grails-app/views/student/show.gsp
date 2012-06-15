@@ -1,4 +1,3 @@
-
 <%@ page import="uk.org.openmentor.courseinfo.Student" %>
 <html>
     <head>
@@ -31,13 +30,13 @@
                         </tr>
                         <tr class="prop">
                             <td valign="top" class="name"><g:message code="student.courses.label" default="Courses" />:</td>
-                            <td valign="top" class="value"><%= studentInstance.courses.collect { it.courseId }.sort().join(', ') %></td>
+                            <td valign="top" class="value">${studentInstance.courses.collect { it.courseId }.sort().join(', ')}</td>
                         </tr>
                     </tbody>
                 </table>
             </div>
             <div class="nav">
-            	<span class="menuButton"><g:link class="edit" action="edit" id="${studentInstance.studentId}"><g:message code="default.button.edit.label" default="Edit" /></g:link></span>
+             <span class="menuButton"><g:link class="edit" action="edit" id="${studentInstance.studentId}"><g:message code="default.button.edit.label" default="Edit" /></g:link></span>
             </div>
         </div>
         </div>
