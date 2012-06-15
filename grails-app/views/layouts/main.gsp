@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title><g:layoutTitle default="OpenMentor" /></title>
+        <title><g:layoutTitle default="welcome to Open Mentor" /></title>
         <link rel="stylesheet" href="${resource(dir:'css/jqueryui/smoothness',file:'jquery-ui-1.8.12.custom.css')}" />
         <link rel="stylesheet" href="${resource(dir:'css/jqueryui',file:'jquery.multiselect.css')}" />
         <link rel="stylesheet" href="${resource(dir:'css/jqueryui',file:'jquery.multiselect.filter.css')}" />

@@ -1,6 +1,6 @@
 <html>
     <head>
-        <title>Welcome to Grails</title>
+        <title>Welcome to Open Mentor</title>
         <meta name="layout" content="main" />
         <style type="text/css" media="screen">
         </style>
@@ -16,7 +16,9 @@
       		<p>
       		<iframe src="http://player.vimeo.com/video/43929003?byline=0&amp;portrait=0" width="500" height="281" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
       		</p>
-   
+      		<p></p>	
+      		
+      		
                 <p>
                 <h2>Choosing a Course</h2>
       		</p>
@@ -24,6 +26,8 @@
       		<iframe src="http://player.vimeo.com/video/43929315?byline=0&amp;portrait=0" width="500" height="281" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
       		</p>
       		
+      		
+      		<p></p>	
       		<p>
       		<strong>Create a student</strong>
       		</p>
