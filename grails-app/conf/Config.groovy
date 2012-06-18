@@ -84,7 +84,7 @@ environments {
     production {
         //grails.serverURL = "http://lslvm-pz3.ecs.soton.ac.uk:8080/${appName}"
 		//grails.serverURL = "http://localhost:8080/${appName}"
-		grails.serverURL = "http://openmentor.kc.ac.uk/${appName}"
+		grails.serverURL = "http://openmentor.kcl.ac.uk/${appName}"
     }
     development {
         grails.serverURL = "http://localhost/${appName}"
