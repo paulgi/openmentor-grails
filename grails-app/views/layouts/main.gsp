@@ -23,7 +23,10 @@
             <img src="${resource(dir:'images',file:'spinner.gif')}" alt="${message(code:'spinner.alt',default:'Loading...')}" />
         </div>
         <div id="logo"><img src="${resource(dir:'images',file:'OMLogo.jpg')}" alt="OpenMentor" border="0" />
-                       <img src="${resource(dir:'images',file:'OMtitle.jpg')}" alt="OpenMentor" border="0" /></div>
+                       <img src="${resource(dir:'images',file:'OMtitle.jpg')}" alt="OpenMentor" border="0" />
+                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                       <img src="${resource(dir:'images',file:'kingslogo.jpg')}" alt="King's College" border="0" />
+                       </div>
 		<div id="versionContainer">
 			<g:if env="test">Test</g:if>
 			<g:if env="development">Development</g:if>
@@ -157,7 +160,9 @@
 					
 					</sec:ifAnyGranted>
                 </div>
-                <div class="panelBtm"></div>
+                <div class="panelBtm">
+                
+                </div>
             </div>
             <g:pageProperty name="page.navpanel" />
         </div>
@@ -167,6 +172,10 @@
         <div id="jqdialog"></div>
         <div id="postJQuery">
             <g:pageProperty name="page.postJQuery" />
+        </div>
+        <div id="footer" align="center">
+        <p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>
+        <img src="${resource(dir:'images',file:'logofooter.jpg')}" alt="University of Southampton, King's College, Open University and JISC" border="0" />
         </div>
     </body>
 </html>
